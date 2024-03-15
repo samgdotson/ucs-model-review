@@ -1,0 +1,22 @@
+name: ucs-model-review
+channels:
+    - conda-forge
+dependencies:
+    # Requirements for core model functionality
+    - python==3.10.13
+    - pip
+    - ipython
+    - matplotlib
+    - pandas
+    - geopandas
+    - numpy
+    - scipy
+    - ipykernel
+    - jupyterlab
+    - seaborn
+    - pypsa
+    - plotly
+    - pip:
+      - gridstatus
+      - highspy
+      - nrelpy
