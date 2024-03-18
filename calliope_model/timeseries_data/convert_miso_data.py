@@ -3,7 +3,7 @@ if __name__ == "__main__":
     from pathlib import Path
     import os
     cwd = Path(os.path.dirname(__file__))
-    energy_data_path = Path(list(cwd.parents)[2])/'energy_data'
+    energy_data_path = Path(list(cwd.parents)[1])/'energy_data'
     read_path = energy_data_path/"2023-miso-demand.csv"
     print(f"Reading from {read_path}")
     miso_data = pd.read_csv(read_path, 
