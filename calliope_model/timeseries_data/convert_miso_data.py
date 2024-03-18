@@ -10,6 +10,10 @@ if __name__ == "__main__":
                             index_col='Interval End', 
                             parse_dates=True)
     miso_data['Load'] = miso_data['Load']*-1
+    miso_data.columns = ["demand"]
+    miso_data.index = miso_data.index.tz_localize(None)
+
+    print(miso_data.index.name)
     save_path = cwd/"miso_demand_calliope.csv"
     print(f"Saving to {save_path}")
     miso_data.to_csv(save_path)
