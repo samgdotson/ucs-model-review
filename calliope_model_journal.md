@@ -86,4 +86,4 @@ Model ran without error.
 
 ## Adding more technology options
 
-....
+7. I removed the `energy_cap_max` constraints on `ccgt` so make sure there is no `unmet_demand` in the model.

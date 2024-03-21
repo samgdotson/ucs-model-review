@@ -1,11 +1,11 @@
 import:  # Import other files from paths relative to this file, or absolute paths
     - 'model_config/techs.yaml'  # This file specifies the model's technologies
     - 'model_config/locations.yaml'  # This file specifies the model's locations
-    - 'scenarios.yaml'  # Scenario and override group definitions
+    # - 'scenarios.yaml'  # Scenario and override group definitions
 
 # Model configuration: all settings that affect the built model
 model:
-    name: National-scale example model
+    name: MISO Single Region Example Model
 
     # What version of Calliope this model is intended for
     calliope_version: 0.6.10

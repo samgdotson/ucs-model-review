@@ -11,14 +11,15 @@ locations:
                 constraints:
                     resource: file=miso_demand_calliope.csv:demand
             ccgt:
-                constraints:
-                    energy_cap_max: 30000 # increased to ensure no unmet_demand in first timestep
+                # constraints:
+                #     energy_cap_max: 30000 # increased to ensure no unmet_demand in first timestep
+            battery:
     # region-1-end
     # other-locs-start
-    region2:
-        coordinates: {lat: 40, lon: -8}
-        techs:
-            battery:
+    # region2:
+    #     coordinates: {lat: 41.1, lon: -92.6}
+    #     techs:
+    #         battery:
 
     # region1-1.coordinates: {lat: 41, lon: -2}
     # region1-2.coordinates: {lat: 39, lon: -1}
@@ -33,13 +34,13 @@ locations:
 # TRANSMISSION CAPACITIES
 ##
 
-links:
-    # links-start
-    region1,region2:
-        techs:
-            ac_transmission:
-                constraints:
-                    energy_cap_max: 10000
+# links:
+#     # links-start
+#     region1,region2:
+#         techs:
+#             ac_transmission:
+#                 constraints:
+#                     energy_cap_max: 10000
 #     region1,region1-1:
 #         techs:
 #             free_transmission:

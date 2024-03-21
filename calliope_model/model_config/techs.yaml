@@ -20,8 +20,8 @@ techs:
         constraints:
             resource: inf
             energy_eff: 0.5
-            energy_cap_max: 40000  # kW
-            energy_cap_max_systemwide: 100000  # kW
+            # energy_cap_max: 40000  # kW
+            # energy_cap_max_systemwide: 100000  # kW
             energy_ramping: 0.8
             lifetime: 25
         costs:
@@ -30,6 +30,22 @@ techs:
                 energy_cap: 750  # USD per kW
                 om_con: 0.02  # USD per kWh
     # ccgt-end
+    util-pv:
+        essentials:
+            name: "Utility-scale photovoltaic"
+            color: "#F9ff20"
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: file=2023-miso-solar.csv
+            resource_area_max: inf
+            lifetime: 20
+            resource_unit: energy_per_area
+        costs:
+            monetary:
+                interest_rate: 0.10
+                resource_area: 200
+
 
     # csp-start
     # csp:

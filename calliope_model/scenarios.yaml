@@ -58,26 +58,26 @@ overrides:
         locations:
             region1.techs.ccgt.constraints.energy_cap_equals: 30000
 
-            region2.techs.battery.constraints.energy_cap_equals: 1000
-            region2.techs.battery.constraints.storage_cap_equals: 5240
+        #     region2.techs.battery.constraints.energy_cap_equals: 1000
+        #     region2.techs.battery.constraints.storage_cap_equals: 5240
 
-            region1-1.techs.csp.constraints.energy_cap_equals: 10000
-            region1-1.techs.csp.constraints.storage_cap_equals: 244301
-            region1-1.techs.csp.constraints.resource_area_equals: 130385
+        #     region1-1.techs.csp.constraints.energy_cap_equals: 10000
+        #     region1-1.techs.csp.constraints.storage_cap_equals: 244301
+        #     region1-1.techs.csp.constraints.resource_area_equals: 130385
 
-            region1-2.techs.csp.constraints.energy_cap_equals: 0
-            region1-2.techs.csp.constraints.storage_cap_equals: 0
-            region1-2.techs.csp.constraints.resource_area_equals: 0
+        #     region1-2.techs.csp.constraints.energy_cap_equals: 0
+        #     region1-2.techs.csp.constraints.storage_cap_equals: 0
+        #     region1-2.techs.csp.constraints.resource_area_equals: 0
 
-            region1-3.techs.csp.constraints.energy_cap_equals: 2534
-            region1-3.techs.csp.constraints.storage_cap_equals: 25301
-            region1-3.techs.csp.constraints.resource_area_equals: 8487
+        #     region1-3.techs.csp.constraints.energy_cap_equals: 2534
+        #     region1-3.techs.csp.constraints.storage_cap_equals: 25301
+        #     region1-3.techs.csp.constraints.resource_area_equals: 8487
 
-        links:
-            region1,region2.techs.ac_transmission.constraints.energy_cap_equals: 3231
-            region1,region1-1.techs.free_transmission.constraints.energy_cap_equals: 9000
-            region1,region1-2.techs.free_transmission.constraints.energy_cap_equals: 0
-            region1,region1-3.techs.free_transmission.constraints.energy_cap_equals: 2281
+        # links:
+        #     region1,region2.techs.ac_transmission.constraints.energy_cap_equals: 3231
+        #     region1,region1-1.techs.free_transmission.constraints.energy_cap_equals: 9000
+        #     region1,region1-2.techs.free_transmission.constraints.energy_cap_equals: 0
+        #     region1,region1-3.techs.free_transmission.constraints.energy_cap_equals: 2281
 
     check_feasibility:
         run:

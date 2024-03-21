@@ -20,3 +20,5 @@ dependencies:
       - gridstatus
       - highspy
       - nrelpy
+      - us
+      - census
