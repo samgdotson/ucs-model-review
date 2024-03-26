@@ -1,0 +1,105 @@
+techs:
+  ccgt:
+    constraints:
+      energy_prod: 'true'
+      energy_ramping: 0.8
+      lifetime: 50
+    costs:
+      monetary:
+        energy_cap: 1215.2401844672108
+        interest_rate: 0.1
+        om_annual: 30.2
+        om_prod: 0.01436
+    essentials:
+      carrier: power
+      color: '#c77228'
+      name: NaturalGas-CC
+      parent: supply
+  coal:
+    constraints:
+      energy_prod: 'true'
+      energy_ramping: 0.4
+      lifetime: 75
+    costs:
+      monetary:
+        energy_cap: 3491.384399329712
+        interest_rate: 0.1
+        om_annual: 76.8
+        om_prod: 0.0177
+    essentials:
+      carrier: power
+      color: '#000000'
+      name: Coal
+      parent: supply
+  demand_power:
+    essentials:
+      carrier: power
+      color: '#072486'
+      name: Power demand
+      parent: demand
+  hydro:
+    constraints:
+      energy_prod: 'true'
+      lifetime: 100
+      resource_eff: 0.62
+      resource_unit: energy
+    costs:
+      monetary:
+        energy_cap: 7397.685869117948
+        interest_rate: 0.1
+        om_annual: 135.0
+    essentials:
+      carrier: power
+      color: '#282dc8'
+      name: Hydropower
+      parent: supply_plus
+  nuclear:
+    constraints:
+      energy_prod: 'true'
+      energy_ramping: 0.8
+      lifetime: 60
+    costs:
+      monetary:
+        energy_cap: 8106.020999108236
+        interest_rate: 0.1
+        om_annual: 152.12
+        om_prod: 0.00934448390648148
+    essentials:
+      carrier: power
+      color: '#097805'
+      name: Nuclear AP1000
+      parent: supply
+  util-pv:
+    constraints:
+      energy_prod: 'true'
+      lifetime: 20
+      resource: file=2023-miso-solar.csv
+      resource_area_max: 1.67816789e+16
+      resource_unit: energy
+    costs:
+      monetary:
+        energy_cap: 1247.6620464760786
+        interest_rate: 0.1
+        om_annual: 20.483036808364783
+    essentials:
+      carrier: power
+      color: '#fcd305'
+      name: UtilityPV
+      parent: supply_plus
+  wind:
+    constraints:
+      energy_prod: 'true'
+      lifetime: 20
+      resource: file=2023-miso-wind.csv
+      resource_area_max: 1.67816789e+16
+      resource_unit: energy
+    costs:
+      monetary:
+        energy_cap: 1268.333333333328
+        interest_rate: 0.1
+        om_annual: 28.8333333333333
+    essentials:
+      carrier: power
+      color: '#05fcf8'
+      name: LandbasedWind
+      parent: supply_plus
