@@ -11,9 +11,11 @@ locations:
                 constraints:
                     resource: file=miso_demand_calliope.csv:demand
             ccgt:
-                # constraints:
-                #     energy_cap_max: 30000 # increased to ensure no unmet_demand in first timestep
-            battery:
+            wind:
+            nuclear:
+            coal:
+            hydro:
+            util-pv:
     # region-1-end
     # other-locs-start
     # region2:
