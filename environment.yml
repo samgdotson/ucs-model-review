@@ -17,6 +17,12 @@ dependencies:
     - pypsa
     - plotly
     - pyarrow
+    - iprogress
+    - pyogrio
+    - fiona
+    - earth_osm
+    - momepy
+    - pysal
     - pip:
       - gridstatus
       - highspy
